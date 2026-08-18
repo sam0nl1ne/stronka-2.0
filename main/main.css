@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevents main page scrolling, keeping layout fixed */
+}
+
+/* Navigation Bar */
+.top-nav {
+    background-color: #c96e5d; /* Matches the salmon/rust color in the image */
+    padding: 15px 40px;
+    text-align: right;
+    letter-spacing: 3px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 12px;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Layout Split */
+.container {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+/* Left Panel: Body Container */
+.interactive-body {
+    width: 45%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.body-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.body-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Organ Buttons */
+.organ-btn {
+    position: absolute;
+    background-color: #4b5258;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translate(-50%, -50%); /* Centers the button perfectly on its top/left coordinates */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.organ-btn:hover {
+    background-color: #636b72;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Right Panel: Content Tray */
+.content-window {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tray-background {
+    background-color: #d6d3c9; /* Beige medical tray color */
+    border-radius: 25px;
+    padding: 30px;
+    width: 85%;
+    height: 80%;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.2), 5px 5px 15px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Iframe styling to mimic the inner website */
+#content-frame {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
