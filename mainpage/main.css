@@ -10,28 +10,31 @@ body {
 /*nav*/
 .myButton {
     margin-top: 10px;
-	box-shadow:inset 0px 1px 0px 0px #f29c93;
-	background:linear-gradient(to bottom, #fe1a00 5%, #540000 100%);
-	background-color:#fe1a00;
-	border-radius:4px;
-	border:1px solid #d83526;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:26px;
-	padding:16px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #540000 100%);
+    background-color: #fe1a00;
+    border-radius: 4px;
+    border: 1px solid #d83526;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 26px;
+    padding: 16px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
 }
+
 .myButton:hover {
-	background:linear-gradient(to bottom, #540000 5%, #fe1a00 100%);
-	background-color:#540000;
+    background: linear-gradient(to bottom, #540000 5%, #fe1a00 100%);
+    background-color: #540000;
 }
+
 .myButton:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
+
 .top-nav {
     margin-left: auto;
     width: 70%;
@@ -127,7 +130,7 @@ body {
     padding: 30px;
     width: 85%;
     height: 80%;
-    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.2), 5px 5px 15px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,5 +143,5 @@ body {
     background-color: white;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
