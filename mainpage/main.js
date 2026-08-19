@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contentFrame = document.getElementById('content-frame');
-    
-    // Map the button IDs to their corresponding HTML files or URLs
     const routeMap = {
         'btn-music': 'music.html',
         'btn-interests': 'interests.html',
@@ -12,18 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'btn-rings': 'rings.html'
     };
 
-    const buttons = document.querySelectorAll('.organ-btn');
-    
-    // Add click event listeners to update the iframe source
-    buttons.forEach(button => {
-        button.addEventListener('click', (event) => {
-            const targetPage = routeMap[event.target.id];
-            
+    document.querySelectorAll('.organ-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const targetPage = routeMap[button.id];
             if (targetPage) {
-                // If running locally without files, you can test with a data URI payload
-                // contentFrame.src = `data:text/html;charset=utf-8,<h1>${event.target.innerText}</h1>`;
-                
-                // Standard implementation: load the actual file
                 contentFrame.src = targetPage;
             }
         });

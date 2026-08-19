@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anatomy Layout</title>
+    <title>Sammylux's Morgue</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Top Navigation Bar -->
+    <!--nav-->
     <nav class="top-nav">
-        <a href="#art">ART</a> |
-        <a href="#horror">HORROR</a> |
-        <a href="#blog">BLOG</a> |
-        <a href="#fun">FUN</a> |
-        <a href="#about">ABOUT</a> |
-        <a href="#links">LINKS</a> |
-        <a href="#sitemap">SITEMAP</a>
+        <a href="#art" class="myButton">ART</a>
+        <a href="#horror" class="myButton">HORROR</a>
+        <a href="#blog" class="myButton">BLOG</a>
+        <a href="#fun" class="myButton">FUN</a>
+        <a href="#about" class="myButton">ABOUT</a>
+        <a href="#links" class="myButton">LINKS</a>
+        <a href="#sitemap" class="myButton">SITEMAP</a>
     </nav>
 
     <main class="container">
-        <!-- Left Panel: Interactive Body Map -->
+    <!--left panel-->
         <section class="interactive-body">
             <div class="body-container">
-                <!-- Base body image (you will need to provide the actual image asset) -->
-                <img src="body-background.png" alt="Human Body Outline" class="body-img">
-                
-                <!-- Clickable labels mapped to organ positions -->
-                <button class="organ-btn" id="btn-music" style="top: 32%; left: 25%;">Music</button>
-                <button class="organ-btn" id="btn-interests" style="top: 32%; left: 75%;">Interests</button>
-                <button class="organ-btn" id="btn-home" style="top: 42%; left: 50%;">Home</button>
-                <button class="organ-btn" id="btn-community" style="top: 65%; left: 20%;">Community</button>
-                <button class="organ-btn" id="btn-guestbook" style="top: 65%; left: 80%;">Guestbook</button>
-                <button class="organ-btn" id="btn-contact" style="top: 73%; left: 50%;">Contact</button>
-                <button class="organ-btn" id="btn-rings" style="top: 90%; left: 50%;">Rings/cliques</button>
+                <img src="https://file.garden/Zd2KO2NjlENDwhxN/site%202.0/torso%20placeholders/chest%20marks.png" alt="corpse" class="body-img">
+            
+                <!--organs-->
+                <button class="organ-btn" id="btn-music" style="top: 28%; left: 32%;" title="Music">
+                    <img src="organ-lungs.png" alt="Music (Lungs)">
+                </button>
+                <button class="organ-btn" id="btn-interests" style="top: 28%; left: 68%;" title="Interests">
+                    <img src="organ-heart.png" alt="Interests (Heart)">
+                </button>
+                <button class="organ-btn" id="btn-home" style="top: 38%; left: 50%;" title="Home">
+                    <img src="organ-liver.png" alt="Home (Liver)">
+                </button>
+                <button class="organ-btn" id="btn-community" style="top: 55%; left: 28%;" title="Community">
+                    <img src="organ-kidney-left.png" alt="Community (Left Kidney)">
+                </button>
+                <button class="organ-btn" id="btn-guestbook" style="top: 55%; left: 72%;" title="Guestbook">
+                    <img src="organ-kidney-right.png" alt="Guestbook (Right Kidney)">
+                </button>
+                <button class="organ-btn" id="btn-contact" style="top: 66%; left: 50%;" title="Contact">
+                    <img src="organ-stomach.png" alt="Contact (Stomach)">
+                </button>
+                <button class="organ-btn" id="btn-rings" style="top: 82%; left: 50%;" title="Rings/Cliques">
+                    <img src="organ-intestines.png" alt="Rings/Cliques (Intestines)">
+                </button>
             </div>
         </section>
 
-        <!-- Right Panel: Dynamic Content Window -->
+        <!--right panel-->
         <section class="content-window">
             <div class="tray-background">
-                <!-- The iframe loads the specific pages based on button clicks -->
                 <iframe id="content-frame" src="home.html" title="Content Window"></iframe>
             </div>
         </section>
